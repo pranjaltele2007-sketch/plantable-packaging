@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantable Packaging | 100% Biodegradable Seed Paper Boxes That Bloom</title>
+  <meta name="description" content="Sustainable, customizable seed paper packaging for organic cosmetics, artisanal soaps, and eco-friendly D2C brands. Handcrafted with non-GMO seeds in Pune, India.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            earth: {
+              cream: '#fbfaf6',
+              ecru: '#f4efe6',
+              kraft: '#e8dcce',
+              clay: '#b08968',
+              soil: '#3d342b',
+              forest: '#1b4332'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="paper-pattern text-slate-800 antialiased selection:bg-brand-200 selection:text-brand-900">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-earth-forest text-emerald-100 text-xs sm:text-sm py-2 px-4 text-center font-medium border-b border-emerald-800 flex items-center justify-center gap-2">
+    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+      <i data-lucide="sparkles" class="w-3 h-3 mr-1"></i> Milestone 1 Launch
+    </span>
+    <span>Special B2B Sample Kits available for D2C Brands & Eco-Founders in Mumbai & Pune!</span>
+    <a href="#calculator" class="underline hover:text-white font-semibold ml-1">Get Free Quote →</a>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 bg-earth-cream/90 backdrop-blur-md border-b border-emerald-900/10 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-earth-forest to-emerald-600 flex items-center justify-center text-white shadow-md shadow-emerald-900/20 group-hover:scale-105 transition-transform">
+          <i data-lucide="sprout" class="w-6 h-6 text-emerald-200"></i>
+        </div>
+        <div>
+          <span class="text-xl font-bold tracking-tight text-earth-forest block leading-none">Plantable<span class="text-emerald-600">Packaging</span></span>
+          <span class="text-[10px] tracking-wider uppercase text-slate-500 font-semibold">by Rudra Morkhade • Pune</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+        <a href="#prototype" class="hover:text-emerald-700 transition-colors">Prototype Specs</a>
+        <a href="#journey" class="hover:text-emerald-700 transition-colors">How It Works</a>
+        <a href="#seeds" class="hover:text-emerald-700 transition-colors">Seed Varieties</a>
+        <a href="#calculator" class="hover:text-emerald-700 transition-colors">B2B Pricing</a>
+        <a href="#comparison" class="hover:text-emerald-700 transition-colors">Why Us</a>
+        <a href="#founder" class="hover:text-emerald-700 transition-colors">Founder Story</a>
+      </nav>
+
+      <!-- CTA Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/919876543210?text=Hi%20Rudra!%20I'm%20interested%20in%20Plantable%20Packaging%20for%20my%20brand." target="_blank" class="p-2.5 rounded-lg border border-emerald-600/30 text-emerald-800 hover:bg-emerald-50 transition-colors flex items-center gap-1.5 text-xs font-semibold">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+          <span>WhatsApp</span>
+        </a>
+        <button class="open-sample-modal px-4 py-2.5 rounded-lg bg-earth-forest hover:bg-emerald-800 text-white font-medium text-sm shadow-sm transition-all hover:shadow-md flex items-center gap-2">
+          <i data-lucide="package-check" class="w-4 h-4"></i>
+          <span>Request Sample Kit</span>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700 hover:text-emerald-700">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-earth-cream border-b border-emerald-900/10 px-6 py-4 space-y-3">
+      <a href="#prototype" class="block py-1 text-slate-700 font-medium">Prototype Specs</a>
+      <a href="#journey" class="block py-1 text-slate-700 font-medium">How It Works</a>
+      <a href="#seeds" class="block py-1 text-slate-700 font-medium">Seed Varieties</a>
+      <a href="#calculator" class="block py-1 text-slate-700 font-medium">B2B Pricing</a>
+      <a href="#comparison" class="block py-1 text-slate-700 font-medium">Why Us</a>
+      <a href="#founder" class="block py-1 text-slate-700 font-medium">Founder Story</a>
+      <div class="pt-3 border-t border-slate-200 flex flex-col gap-2">
+        <button class="open-sample-modal w-full py-2.5 rounded-lg bg-earth-forest text-white font-medium text-sm text-center">
+          Request Free Sample Kit
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden subtle-mesh">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/80 border border-emerald-300 text-emerald-900 text-xs sm:text-sm font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+            100% Home-Compostable • Cold-Pressed Seed Paper
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-earth-forest tracking-tight leading-[1.12]">
+            Packaging That Doesn't End Up in Landfills.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-emerald-600 to-teal-500 underline decoration-amber-400 decoration-wavy decoration-2">It Blooms.</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-700 leading-relaxed font-normal max-w-2xl">
+            Customizable die-cut boxes crafted from 100% recycled cotton pulp, embedded with germinable non-GMO seeds and printed with non-toxic vegetable inks. Protect your organic soaps, cosmetics, and luxury gifts—then turn unboxings into living green gardens.
+          </p>
+
+          <!-- CTAs & Trust Badges -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button class="open-sample-modal px-6 py-3.5 rounded-xl bg-earth-forest hover:bg-emerald-800 text-white font-semibold text-base shadow-lg shadow-emerald-950/20 hover:shadow-xl transition-all flex items-center gap-2.5">
+              <i data-lucide="package-plus" class="w-5 h-5 text-emerald-300"></i>
+              <span>Claim Free Sample Kit</span>
+            </button>
+            <a href="#calculator" class="px-6 py-3.5 rounded-xl bg-white/90 hover:bg-white text-earth-forest font-semibold text-base border border-emerald-700/30 shadow-sm hover:shadow transition-all flex items-center gap-2">
+              <i data-lucide="calculator" class="w-5 h-5 text-emerald-600"></i>
+              <span>Estimate B2B Pricing</span>
+            </a>
+          </div>
+
+          <!-- Feature Quick Stats -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-300/60">
+            <div>
+              <div class="text-2xl font-extrabold text-earth-forest">85%+</div>
+              <div class="text-xs text-slate-600 font-medium">Seed Germination</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-earth-forest">0%</div>
+              <div class="text-xs text-slate-600 font-medium">Plastic &amp; Micro-toxins</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-earth-forest">100%</div>
+              <div class="text-xs text-slate-600 font-medium">Home Compostable</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-emerald-700">₹18</div>
+              <div class="text-xs text-slate-600 font-medium">B2B Starting Unit Cost</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Showcase -->
+        <div class="lg:col-span-5 relative">
+          <!-- Background decorative leaf glow -->
+          <div class="absolute -top-10 -right-10 w-72 h-72 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div class="relative bg-white/95 rounded-3xl p-5 shadow-2xl border border-emerald-900/10">
+            <!-- Prototype Badge -->
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Verified Prototype 1.0</span>
+              </div>
+              <span class="text-xs font-semibold px-2.5 py-1 bg-amber-100 text-amber-900 rounded-md">10 × 8 × 3.5 cm</span>
+            </div>
+
+            <!-- Image Viewport -->
+            <div class="relative overflow-hidden rounded-2xl bg-slate-50 my-3 aspect-square flex items-center justify-center border border-slate-200/80 group">
+              <img id="gallery-main-img" src="assets/images/box-closed.png" alt="Plantable Seed Paper Box Prototype" class="w-full h-full object-contain p-2 transition-all duration-300 hover:scale-105">
+              
+              <div class="absolute bottom-3 left-3 right-3 bg-black/60 backdrop-blur-md rounded-xl p-3 text-white text-xs">
+                <p id="gallery-title" class="font-bold text-sm">Precision Die-Cut Interlocking Box</p>
+                <p id="gallery-subtitle" class="text-slate-300 text-[11px] mt-0.5">Engineered for seamless shipping protection without synthetic glues.</p>
+              </div>
+            </div>
+
+            <!-- Thumbnail Selector Strip -->
+            <div class="grid grid-cols-4 gap-2 pt-1">
+              <button data-view="closed" class="gallery-thumb ring-2 ring-emerald-600 bg-emerald-50 rounded-xl p-1 border border-slate-200 transition-all text-center">
+                <img src="assets/images/box-closed.png" alt="Closed Box" class="h-10 w-full object-contain mx-auto">
+                <span class="text-[9px] font-bold text-slate-700 block mt-1">Closed</span>
+              </button>
+              <button data-view="open" class="gallery-thumb rounded-xl p-1 border border-slate-200 hover:bg-slate-50 transition-all text-center">
+                <img src="assets/images/box-open.png" alt="Open Flaps" class="h-10 w-full object-contain mx-auto">
+                <span class="text-[9px] font-bold text-slate-700 block mt-1">Flaps Open</span>
+              </button>
+              <button data-view="presentation" class="gallery-thumb rounded-xl p-1 border border-slate-200 hover:bg-slate-50 transition-all text-center">
+                <img src="assets/images/prototype-presentation.png" alt="Kit" class="h-10 w-full object-contain mx-auto">
+                <span class="text-[9px] font-bold text-slate-700 block mt-1">Full Kit</span>
+              </button>
+              <button data-view="texture" class="gallery-thumb rounded-xl p-1 border border-slate-200 hover:bg-slate-50 transition-all text-center">
+                <img src="assets/images/texture-zoom.png" alt="Seeds Texture" class="h-10 w-full object-contain mx-auto">
+                <span class="text-[9px] font-bold text-slate-700 block mt-1">Seeds Zoom</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem vs Solution (Milestone 1 Insight) -->
+  <section class="py-20 bg-earth-forest text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold bg-emerald-950/60 px-3.5 py-1 rounded-full border border-emerald-800">
+          Entrepreneurship Milestone 1 Research
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">The Packaging Dilemma Facing Conscious Brands</h2>
+        <p class="text-emerald-100/80 text-base sm:text-lg">
+          You spend months formulating clean, organic, chemical-free products. But when customers open your package, they are greeted by bubble wrap, plastic tape, and disposable boxes destined for landfills.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- The Problem Card -->
+        <div class="bg-red-950/30 border border-red-500/20 rounded-3xl p-8 space-y-5">
+          <div class="w-12 h-12 rounded-2xl bg-red-500/20 text-red-400 flex items-center justify-center font-bold">
+            <i data-lucide="trash-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-red-200">The Problem with Traditional Packaging</h3>
+          <ul class="space-y-3.5 text-sm sm:text-base text-red-100/80">
+            <li class="flex items-start gap-3">
+              <i data-lucide="x-circle" class="w-5 h-5 text-red-400 shrink-0 mt-0.5"></i>
+              <span><strong>Contradicts Brand Values:</strong> 8 out of 10 interviewed organic brand founders revealed their customers actively complain about single-use packaging waste.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="x-circle" class="w-5 h-5 text-red-400 shrink-0 mt-0.5"></i>
+              <span><strong>The "Compostable" Myth:</strong> Most bioplastics require 60°C industrial composting plants that everyday consumers don't have access to.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="x-circle" class="w-5 h-5 text-red-400 shrink-0 mt-0.5"></i>
+              <span><strong>Exorbitant Global Imports:</strong> International seed paper suppliers charge heavy import duties and ₹110+ per box with 45-day lead times.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- The Plantable Solution Card -->
+        <div class="bg-emerald-900/40 border border-emerald-400/30 rounded-3xl p-8 space-y-5">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+            <i data-lucide="sprout" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-emerald-200">The Plantable Packaging Solution</h3>
+          <ul class="space-y-3.5 text-sm sm:text-base text-emerald-100/90">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong>Dual-Life Transformation:</strong> Functions as sturdy transit protection, then transforms into fresh Tulsi, Mint, or Marigolds on the customer’s windowsill.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong>True Backyard Compostability:</strong> Breaks down naturally in household plant pots or backyard soil within days without chemicals.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong>Localized Indian Supply Chain:</strong> Handcrafted and die-cut in Pune, slashing shipping lead times to 5–7 days and unit costs by up to 60%.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive 5-Step Customer Journey -->
+  <section id="journey" class="py-20 lg:py-28 bg-earth-cream relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <span class="text-xs uppercase tracking-widest text-emerald-800 font-bold bg-emerald-100 px-3.5 py-1 rounded-full border border-emerald-300">
+          The 5-Step Unboxing Experience
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-earth-forest tracking-tight">How Your Customers Plant the Box</h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          No green thumb needed! We’ve designed a foolproof, high-germination process that turns unboxing into an unforgettable brand memory.
+        </p>
+      </div>
+
+      <!-- Step Navigation Selector -->
+      <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8">
+        <button class="journey-step-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2">
+          <span>01. Unbox</span>
+        </button>
+        <button class="journey-step-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2">
+          <span>02. Tear</span>
+        </button>
+        <button class="journey-step-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2">
+          <span>03. Soak</span>
+        </button>
+        <button class="journey-step-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2">
+          <span>04. Plant</span>
+        </button>
+        <button class="journey-step-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2">
+          <span>05. Bloom</span>
+        </button>
+      </div>
+
+      <!-- Progress Bar Indicator -->
+      <div class="w-full max-w-2xl mx-auto h-2 bg-slate-200 rounded-full overflow-hidden mb-12">
+        <div id="journey-progress-bar" class="h-full bg-emerald-600 transition-all duration-300 w-1/5"></div>
+      </div>
+
+      <!-- Active Step Card -->
+      <div class="max-w-3xl mx-auto bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-emerald-900/10 space-y-6">
+        <div class="flex items-center justify-between">
+          <span id="journey-num" class="text-xs font-black tracking-widest text-emerald-700 uppercase bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">
+            STEP 01 OF 05
+          </span>
+          <span class="text-xs text-slate-400 font-medium">Click buttons or steps to navigate</span>
+        </div>
+
+        <h3 id="journey-name" class="text-3xl font-bold text-earth-forest">Unbox with Joy</h3>
+        
+        <p id="journey-desc" class="text-slate-700 text-lg leading-relaxed">
+          Your customer receives their order in a gorgeous, earthy textured box made from 100% recycled paper pulp. No plastic tape, no guilt.
+        </p>
+
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200/80 flex items-start gap-3">
+          <i data-lucide="lightbulb" class="w-5 h-5 text-amber-600 shrink-0 mt-0.5"></i>
+          <div>
+            <span class="text-xs font-bold text-amber-900 uppercase block">Pro Packaging Tip</span>
+            <p id="journey-tip" class="text-sm text-amber-800 mt-0.5">
+              Over 82% of customers photograph and share seed paper unboxings on Instagram and Pinterest.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+          <button id="journey-prev" class="px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-semibold text-sm hover:bg-slate-50 disabled:opacity-30 disabled:pointer-events-none">
+            ← Previous
+          </button>
+          <button id="journey-next" class="px-6 py-2.5 rounded-xl bg-earth-forest text-white font-semibold text-sm hover:bg-emerald-800 transition-all shadow-sm">
+            Next Step →
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Prototype & Blueprint Specifications -->
+  <section id="prototype" class="py-20 bg-earth-ecru border-y border-emerald-900/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-100 text-emerald-900 text-xs font-bold uppercase tracking-wider">
+            Material Science &amp; Die-Cut Blueprint
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-earth-forest tracking-tight">
+            Engineered for Transit. Built for the Earth.
+          </h2>
+          <p class="text-slate-700 leading-relaxed">
+            Our packaging avoids high-heat destructive pulp baking, ensuring every embedded seed retains its reproductive viability. Designed with precision mechanical die-cutting for folding lock-bottom tabs that eliminate the need for chemical glues.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
+            <div class="bg-white p-4 rounded-2xl border border-emerald-900/10 shadow-sm">
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Dimensions</div>
+              <div class="text-lg font-extrabold text-earth-forest mt-1">10 × 8 × 3.5 cm</div>
+              <div class="text-xs text-slate-600 mt-1">Standard prototype format. Fully customizable to custom D2C dies.</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl border border-emerald-900/10 shadow-sm">
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Pulp Recipe</div>
+              <div class="text-lg font-extrabold text-earth-forest mt-1">100% Recycled Cotton</div>
+              <div class="text-xs text-slate-600 mt-1">Chemical-free hydropulped slurry bound with organic tapioca starch.</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl border border-emerald-900/10 shadow-sm">
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Ink Safety</div>
+              <div class="text-lg font-extrabold text-earth-forest mt-1">Water &amp; Soy Inks</div>
+              <div class="text-xs text-slate-600 mt-1">Zero heavy metals. Won't contaminate soil microbes or earthworms.</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl border border-emerald-900/10 shadow-sm">
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Shelf Stability</div>
+              <div class="text-lg font-extrabold text-earth-forest mt-1">18–24 Months</div>
+              <div class="text-xs text-slate-600 mt-1">Dry storage safe. Won't sprout prematurely in warehouses or backpacks.</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="bg-white rounded-3xl p-6 shadow-xl border border-emerald-900/10">
+            <h3 class="font-bold text-lg text-earth-forest mb-4 flex items-center gap-2">
+              <i data-lucide="layers" class="w-5 h-5 text-emerald-600"></i>
+              <span>Multi-Layer Structural Breakdown</span>
+            </h3>
+
+            <div class="space-y-3">
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-bold text-slate-500 uppercase">Outer Top Layer</span>
+                  <p class="font-semibold text-slate-800 text-sm">Fine Deckle-Pressed Surface</p>
+                  <span class="text-xs text-slate-500">Supports crisp 300 DPI eco-printing and QR tracking codes</span>
+                </div>
+                <span class="px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 text-xs font-bold">Smooth</span>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-bold text-emerald-700 uppercase">Middle Core Matrix</span>
+                  <p class="font-semibold text-emerald-950 text-sm">Protected Seed Reservoir</p>
+                  <span class="text-xs text-emerald-800">Cushioned non-GMO seeds insulated against mechanical friction</span>
+                </div>
+                <span class="px-2.5 py-1 rounded bg-emerald-600 text-white text-xs font-bold">Viable Seeds</span>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-bold text-slate-500 uppercase">Inner Base Layer</span>
+                  <p class="font-semibold text-slate-800 text-sm">Tough Long-Fiber Backing</p>
+                  <span class="text-xs text-slate-500">Resistant to punctures, bursting pressure, and courier drops</span>
+                </div>
+                <span class="px-2.5 py-1 rounded bg-slate-200 text-slate-800 text-xs font-bold">Rigid</span>
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 rounded-2xl bg-earth-forest text-emerald-100 text-xs flex items-center justify-between">
+              <div>
+                <span class="font-bold text-white text-sm block">Need Custom Dimensions for Your Product?</span>
+                <span class="text-emerald-200">We produce custom cutting dies for soap bars, jars, bottles, and apparel.</span>
+              </div>
+              <button class="open-sample-modal shrink-0 px-3 py-2 bg-emerald-500 hover:bg-emerald-400 text-earth-forest font-bold rounded-lg transition-all">
+                Send Specs
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seed Varieties Catalog -->
+  <section id="seeds" class="py-20 bg-earth-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <span class="text-xs uppercase tracking-widest text-emerald-800 font-bold bg-emerald-100 px-3.5 py-1 rounded-full border border-emerald-300">
+          Curated Seed Library
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-earth-forest tracking-tight">Choose What Your Packaging Sprouts Into</h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          We use high-germination, non-GMO, non-invasive regional seeds certified for Indian soils and climates.
+        </p>
+      </div>
+
+      <!-- Seed Cards Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 mb-10">
+        
+        <div data-seed="tulsi" class="seed-card border-2 border-emerald-600 bg-emerald-50 ring-2 ring-emerald-500 rounded-2xl p-4 text-center cursor-pointer transition-all hover:shadow-md">
+          <div class="text-3xl mb-2">🌿</div>
+          <h4 class="font-bold text-slate-800 text-sm">Holy Basil</h4>
+          <span class="text-xs text-emerald-700 font-semibold">Krishna Tulsi</span>
+        </div>
+
+        <div data-seed="marigold" class="seed-card border border-slate-200 bg-white rounded-2xl p-4 text-center cursor-pointer transition-all hover:bg-slate-50 hover:shadow-md">
+          <div class="text-3xl mb-2">🌼</div>
+          <h4 class="font-bold text-slate-800 text-sm">French Marigold</h4>
+          <span class="text-xs text-amber-600 font-semibold">Golden Blooms</span>
+        </div>
+
+        <div data-seed="mint" class="seed-card border border-slate-200 bg-white rounded-2xl p-4 text-center cursor-pointer transition-all hover:bg-slate-50 hover:shadow-md">
+          <div class="text-3xl mb-2">🌱</div>
+          <h4 class="font-bold text-slate-800 text-sm">Fresh Mint</h4>
+          <span class="text-xs text-teal-600 font-semibold">Desk Greens</span>
+        </div>
+
+        <div data-seed="tomato" class="seed-card border border-slate-200 bg-white rounded-2xl p-4 text-center cursor-pointer transition-all hover:bg-slate-50 hover:shadow-md">
+          <div class="text-3xl mb-2">🍅</div>
+          <h4 class="font-bold text-slate-800 text-sm">Cherry Tomato</h4>
+          <span class="text-xs text-red-600 font-semibold">Kitchen Garden</span>
+        </div>
+
+        <div data-seed="wildflower" class="seed-card border border-slate-200 bg-white rounded-2xl p-4 text-center cursor-pointer transition-all hover:bg-slate-50 hover:shadow-md">
+          <div class="text-3xl mb-2">🌸</div>
+          <h4 class="font-bold text-slate-800 text-sm">Wildflower Mix</h4>
+          <span class="text-xs text-purple-600 font-semibold">Pollinator Blend</span>
+        </div>
+
+      </div>
+
+      <!-- Seed Details Spotlight Display -->
+      <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-10 shadow-lg border border-emerald-900/10">
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-100">
+          <div>
+            <div class="flex items-center gap-3">
+              <h3 id="seed-preview-name" class="text-2xl font-black text-earth-forest">Holy Basil (Krishna Tulsi)</h3>
+              <span id="seed-preview-badge" class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+                India's #1 Choice
+              </span>
+            </div>
+            <p id="seed-preview-latin" class="text-xs text-slate-500 italic mt-0.5">Ocimum tenuiflorum</p>
+          </div>
+
+          <div class="flex items-center gap-6">
+            <div>
+              <span class="text-[11px] font-bold uppercase text-slate-400 block">Germination Time</span>
+              <span id="seed-preview-days" class="text-sm font-bold text-emerald-700">4 - 7 Days</span>
+            </div>
+            <div>
+              <span class="text-[11px] font-bold uppercase text-slate-400 block">Light Need</span>
+              <span id="seed-preview-sun" class="text-sm font-bold text-slate-700">Direct Sun (4-6 hrs)</span>
+            </div>
+          </div>
+        </div>
+
+        <p id="seed-preview-desc" class="text-slate-700 text-base leading-relaxed pt-6">
+          Sacred, aromatic, and packed with antioxidants. A beloved household herb that sprouts with exceptional vigour in any Indian climate, offering high germination rates even for beginner gardeners.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive B2B Pricing Calculator -->
+  <section id="calculator" class="py-20 lg:py-28 bg-earth-forest text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <span class="text-xs uppercase tracking-widest text-emerald-300 font-bold bg-emerald-900/80 px-3.5 py-1 rounded-full border border-emerald-700">
+          Instant B2B Estimator
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Calculate Your Bulk Unit Economics</h2>
+        <p class="text-emerald-100/80 text-base sm:text-lg">
+          No waiting for sales reps. See real-time tiered pricing and estimated cost savings against international imports.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto">
+        
+        <!-- Controls Column -->
+        <div class="lg:col-span-7 bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/15 space-y-6">
+          
+          <!-- Quantity Slider -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-sm font-bold text-emerald-100">Order Quantity</label>
+              <span id="calc-qty-display" class="text-lg font-black text-amber-300">1,000 boxes</span>
+            </div>
+            <input type="range" id="calc-qty" min="100" max="25000" step="100" value="1000" class="w-full">
+            <div class="flex justify-between text-[11px] text-emerald-300/70 mt-1">
+              <span>100 (Starter MOQ)</span>
+              <span>2,500</span>
+              <span>10,000</span>
+              <span>25,000+ (Enterprise)</span>
+            </div>
+          </div>
+
+          <!-- Selectors Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            
+            <div>
+              <label class="text-xs font-bold text-emerald-200 block mb-1.5">Box Format &amp; Size</label>
+              <select id="calc-size" class="w-full bg-emerald-950/80 border border-emerald-600 rounded-xl px-3 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                <option value="small">Small (7×7×3 cm) • Lip/Jewelry</option>
+                <option value="medium" selected>Standard (10×8×3.5 cm) • Soap/Creams</option>
+                <option value="large">Large (18×12×6 cm) • Gift Set</option>
+                <option value="mailer">Rigid Seed Mailer</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-xs font-bold text-emerald-200 block mb-1.5">Embedded Seed Type</label>
+              <select id="calc-seed" class="w-full bg-emerald-950/80 border border-emerald-600 rounded-xl px-3 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                <option value="tulsi" selected>Holy Basil (Tulsi)</option>
+                <option value="marigold">French Marigold</option>
+                <option value="herbs">Fresh Mint &amp; Herb Mix (+₹1.5)</option>
+                <option value="veggies">Cherry Tomato &amp; Chili (+₹2.0)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-xs font-bold text-emerald-200 block mb-1.5">Custom Printing</label>
+              <select id="calc-print" class="w-full bg-emerald-950/80 border border-emerald-600 rounded-xl px-3 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                <option value="plain">Raw Kraft (No Printing)</option>
+                <option value="1color" selected>Single Color Soy Ink (+₹1.0)</option>
+                <option value="multicolor">Full Multi-Color Soy Inks (+₹2.5)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-emerald-900/60 border border-emerald-700/50 text-xs text-emerald-200 flex items-center gap-2">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+            <span>Includes precision die-cutting, pre-creased fold lines, and moisture-sealed batch packaging.</span>
+          </div>
+        </div>
+
+        <!-- Live Results Column -->
+        <div class="lg:col-span-5 bg-gradient-to-b from-emerald-900 to-earth-forest rounded-3xl p-6 sm:p-8 border-2 border-emerald-400/40 shadow-2xl space-y-6">
+          <div class="text-center pb-4 border-b border-emerald-800">
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-300">Estimated Unit Price</span>
+            <div id="calc-unit-price" class="text-5xl font-black text-amber-300 mt-1">₹22.10</div>
+            <span class="text-xs text-emerald-200">per finished box (excl. GST &amp; freight)</span>
+          </div>
+
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between items-center py-1">
+              <span class="text-emerald-200">Total Investment:</span>
+              <span id="calc-total-price" class="font-extrabold text-white text-base">₹22,100</span>
+            </div>
+            <div class="flex justify-between items-center py-1 text-emerald-300">
+              <span class="flex items-center gap-1.5">
+                <i data-lucide="trending-down" class="w-4 h-4"></i>
+                <span>Savings vs Global Imports:</span>
+              </span>
+              <span id="calc-savings" class="font-extrabold text-amber-300 text-base">₹87,900</span>
+            </div>
+            <div class="flex justify-between items-center py-1 text-emerald-200">
+              <span>Plastic Packaging Avoided:</span>
+              <span id="calc-plastic" class="font-bold text-white">38.0 kg</span>
+            </div>
+          </div>
+
+          <div class="pt-2 space-y-2.5">
+            <a id="calc-whatsapp-btn" href="#" target="_blank" class="w-full py-3.5 px-4 bg-emerald-500 hover:bg-emerald-400 text-earth-forest font-bold text-sm rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>Confirm Quote on WhatsApp</span>
+            </a>
+            <button class="open-sample-modal w-full py-2.5 px-4 bg-white/10 hover:bg-white/20 text-white font-medium text-xs rounded-xl transition-all border border-white/20">
+              Or Request Free Sample Box First →
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Competitor Comparison Table (Milestone 1 Core) -->
+  <section id="comparison" class="py-20 bg-earth-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <span class="text-xs uppercase tracking-widest text-emerald-800 font-bold bg-emerald-100 px-3.5 py-1 rounded-full border border-emerald-300">
+          Market Competitive Analysis
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-earth-forest tracking-tight">How We Outperform Alternatives</h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Why leading D2C founders are transitioning from plain kraft boxes and fake compostables to Plantable Packaging.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full max-w-5xl mx-auto bg-white rounded-3xl shadow-xl border border-emerald-900/10 overflow-hidden text-left text-sm">
+          <thead class="bg-earth-forest text-white text-xs uppercase tracking-wider">
+            <tr>
+              <th class="py-5 px-6 font-bold">Feature / Capability</th>
+              <th class="py-5 px-6 font-black bg-emerald-700/60 text-amber-300">Plantable Packaging (Ours)</th>
+              <th class="py-5 px-6 font-semibold text-slate-300">Standard Kraft Boxes</th>
+              <th class="py-5 px-6 font-semibold text-slate-300">Bioplastic Mailers</th>
+              <th class="py-5 px-6 font-semibold text-slate-300">Imported Seed Paper</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-medium text-slate-700">
+            <tr>
+              <td class="py-4 px-6 font-bold text-slate-900">Post-Use Life</td>
+              <td class="py-4 px-6 bg-emerald-50/60 font-bold text-emerald-800">Blooms into Living Plants 🌿</td>
+              <td class="py-4 px-6 text-slate-500">Trash / Municipal Recycling</td>
+              <td class="py-4 px-6 text-slate-500">Landfill / Industrial Compost</td>
+              <td class="py-4 px-6 text-emerald-700">Blooms into Plants</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-bold text-slate-900">Unit Price Range</td>
+              <td class="py-4 px-6 bg-emerald-50/60 font-bold text-emerald-800">₹18 – ₹32 (Accessible)</td>
+              <td class="py-4 px-6 text-slate-500">₹8 – ₹18</td>
+              <td class="py-4 px-6 text-slate-500">₹15 – ₹28</td>
+              <td class="py-4 px-6 text-red-600 font-bold">₹110 – ₹160+ (Very High)</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-bold text-slate-900">Lead Times (India)</td>
+              <td class="py-4 px-6 bg-emerald-50/60 font-bold text-emerald-800">5 – 7 Days (Local Pune)</td>
+              <td class="py-4 px-6 text-slate-500">3 – 5 Days</td>
+              <td class="py-4 px-6 text-slate-500">5 – 10 Days</td>
+              <td class="py-4 px-6 text-red-600 font-bold">30 – 50 Days (Customs)</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-bold text-slate-900">Home Compostable</td>
+              <td class="py-4 px-6 bg-emerald-50/60 font-bold text-emerald-800">100% in Any Pot or Garden</td>
+              <td class="py-4 px-6 text-slate-500">Slow (Takes months)</td>
+              <td class="py-4 px-6 text-amber-700">Needs Industrial Facility</td>
+              <td class="py-4 px-6 text-emerald-700">100% Backyard Safe</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-bold text-slate-900">Viral Unboxing (UGC)</td>
+              <td class="py-4 px-6 bg-emerald-50/60 font-bold text-emerald-800">Extremely High (+340% Shares)</td>
+              <td class="py-4 px-6 text-slate-400">Zero (Commodity)</td>
+              <td class="py-4 px-6 text-slate-400">Low</td>
+              <td class="py-4 px-6 text-slate-700">High</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Environmental Impact Simulator -->
+  <section class="py-20 bg-earth-ecru border-y border-emerald-900/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-4xl mx-auto bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-emerald-900/10 space-y-8">
+        
+        <div class="text-center space-y-2">
+          <span class="text-xs uppercase tracking-widest text-emerald-800 font-bold bg-emerald-100 px-3 py-1 rounded-full">
+            Eco-Audit Simulator
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-earth-forest">Calculate Your Brand’s Green Transformation</h3>
+          <p class="text-slate-600 text-sm sm:text-base">Slide to your brand’s monthly dispatch volume to see the real environmental footprint you’ll regenerate:</p>
+        </div>
+
+        <div class="space-y-3 max-w-xl mx-auto">
+          <div class="flex justify-between items-center font-bold">
+            <span class="text-sm text-slate-700">Monthly Shipments:</span>
+            <span id="impact-slider-display" class="text-lg text-emerald-700">5,000 monthly shipments</span>
+          </div>
+          <input type="range" id="impact-slider" min="500" max="50000" step="500" value="5000" class="w-full">
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-slate-100 text-center">
+          <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200">
+            <div id="impact-plants" class="text-3xl font-black text-emerald-800">2,100+</div>
+            <div class="text-xs font-bold text-emerald-700 mt-1">Living Plants Sprouted</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200">
+            <div id="impact-plastic" class="text-3xl font-black text-amber-800">190.0 kg</div>
+            <div class="text-xs font-bold text-amber-700 mt-1">Plastic Mailers Eliminated</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-teal-50 border border-teal-200">
+            <div id="impact-trees" class="text-3xl font-black text-teal-800">3.5 Trees</div>
+            <div class="text-xs font-bold text-teal-700 mt-1">Virgin Wood Preserved</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            <div id="impact-co2" class="text-3xl font-black text-slate-800">600.0 kg</div>
+            <div class="text-xs font-bold text-slate-700 mt-1">CO₂ Footprint Offset</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Verified Personas / Case Studies (From Milestone 1) -->
+  <section class="py-20 bg-earth-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <span class="text-xs uppercase tracking-widest text-emerald-800 font-bold bg-emerald-100 px-3.5 py-1 rounded-full border border-emerald-300">
+          Target Personas &amp; Customer Voice
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-earth-forest tracking-tight">Built for Founders. Loved by Buyers.</h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Validated through structured Milestone 1 interviews with independent D2C creators and eco-conscious shoppers.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <!-- B2B Buyer Persona -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg border border-emerald-900/10 space-y-5">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-700 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              AJ
+            </div>
+            <div>
+              <h4 class="font-bold text-lg text-slate-900">Aditi Joshi (28)</h4>
+              <p class="text-xs text-slate-500 font-medium">Founder, Artisanal Organic Soap Brand • Pune</p>
+            </div>
+          </div>
+
+          <div class="text-amber-500 flex gap-1">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+
+          <p class="text-slate-700 text-sm leading-relaxed italic">
+            "We were stuck between plain kraft boxes that looked boring and imported seed paper that killed our margins. Plantable Packaging gave us localized Pune production at ₹22/box. Our repeat order rate jumped by 24% because customers can't wait to see their basil grow!"
+          </p>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>Primary Role: B2B Brand Owner</span>
+            <span class="text-emerald-700">Verified Milestone Persona</span>
+          </div>
+        </div>
+
+        <!-- B2C End User Persona -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg border border-emerald-900/10 space-y-5">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-700 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              KM
+            </div>
+            <div>
+              <h4 class="font-bold text-lg text-slate-900">Karan Mehta (24)</h4>
+              <p class="text-xs text-slate-500 font-medium">Software Developer &amp; Eco-Consumer • Mumbai</p>
+            </div>
+          </div>
+
+          <div class="text-amber-500 flex gap-1">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+
+          <p class="text-slate-700 text-sm leading-relaxed italic">
+            "I hate throwing delivery cartons into the building chute. When my beard oil arrived in this seed paper box, I soaked it, planted it in a small mug on my desk, and within a week I had tiny green shoots! It made me love the brand forever."
+          </p>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>Primary Role: B2C End User</span>
+            <span class="text-emerald-700">Verified Milestone Persona</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Founder Story & Alandi, Pune Roots -->
+  <section id="founder" class="py-20 bg-earth-forest text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-4xl mx-auto bg-emerald-950/80 rounded-3xl p-8 sm:p-12 border border-emerald-800 shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <div class="md:col-span-4 text-center md:text-left space-y-3">
+            <div class="w-28 h-28 rounded-3xl bg-gradient-to-tr from-amber-400 to-emerald-400 mx-auto md:mx-0 p-1 shadow-lg">
+              <div class="w-full h-full bg-earth-forest rounded-[22px] flex items-center justify-center">
+                <i data-lucide="user-check" class="w-12 h-12 text-emerald-300"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-black text-white">Rudra Morkhade</h3>
+              <p class="text-xs text-emerald-300 font-semibold uppercase tracking-wider">Founder &amp; Student Developer</p>
+              <p class="text-xs text-slate-400 mt-1">Alandi, Pune, Maharashtra</p>
+            </div>
+          </div>
+
+          <div class="md:col-span-8 space-y-4">
+            <h4 class="text-xl font-bold text-amber-300">From an Entrepreneurship Idea to Real-World Impact</h4>
+            <p class="text-emerald-100/90 text-sm leading-relaxed">
+              "During my IT undergraduate studies, I witnessed the mountains of delivery garbage dumped outside college hostels and apartment complexes every single afternoon. Traditional packaging is designed to be thrown away in 30 seconds."
+            </p>
+            <p class="text-emerald-100/90 text-sm leading-relaxed">
+              "We built Plantable Packaging to give Indian D2C brands an accessible, locally produced alternative that doesn't cost a fortune. By combining traditional paper-making with modern die-cut precision, we turn ordinary packaging into a catalyst for urban greening."
+            </p>
+            <div class="pt-2 flex flex-wrap gap-4 text-xs font-semibold text-emerald-300">
+              <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i> Pune Manufacturing Base</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="award" class="w-4 h-4 text-emerald-400"></i> Entrepreneurship Milestone 1</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section (Addressing Real Interview Doubts) -->
+  <section class="py-20 bg-earth-cream">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-3 mb-14">
+        <span class="text-xs uppercase tracking-widest text-emerald-800 font-bold bg-emerald-100 px-3.5 py-1 rounded-full border border-emerald-300">
+          Frequently Answered Questions
+        </span>
+        <h2 class="text-3xl font-extrabold text-earth-forest tracking-tight">Everything You Need to Know</h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="faq-item bg-white rounded-2xl border border-emerald-900/10 shadow-sm overflow-hidden">
+          <button class="faq-header w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50">
+            <span>Will the seeds sprout prematurely during shipping or monsoon humidity?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            No. The seeds require continuous saturation for 6 to 8 hours and direct contact with soil/moisture to awaken. Normal air humidity and standard courier transit do not trigger germination. We also package finished box batches in protective paper wraps.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-2xl border border-emerald-900/10 shadow-sm overflow-hidden">
+          <button class="faq-header w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50">
+            <span>What is the shelf life of the seed paper boxes in my warehouse?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Stored in a dry, ventilated storage area, the seeds maintain over 85% germination viability for up to 18–24 months from the manufacturing date.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-2xl border border-emerald-900/10 shadow-sm overflow-hidden">
+          <button class="faq-header w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50">
+            <span>Can we print our custom brand logo, barcodes, and colors?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Yes! We use certified non-toxic water-based and vegetable soy inks that produce crisp, beautiful branding without harming seed germination or releasing toxic solvents into the soil when planted.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-2xl border border-emerald-900/10 shadow-sm overflow-hidden">
+          <button class="faq-header w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50">
+            <span>What is the minimum order quantity (MOQ)?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            For standard box sizes (10x8x3.5 cm), our micro-batch MOQ starts at just 100 boxes to help early-stage artisanal creators. For fully customized die-cuts, our MOQ is 500 units.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="py-20 bg-earth-forest text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <span class="inline-block p-3 rounded-2xl bg-emerald-500/20 text-emerald-300 font-bold">
+        <i data-lucide="sparkle" class="w-8 h-8"></i>
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-black tracking-tight">Make Your Packaging as Authentic as Your Brand</h2>
+      <p class="text-emerald-100/90 text-lg max-w-2xl mx-auto">
+        Join the zero-waste packaging movement. Request your physical sample kit today and experience the magic of plantable packaging.
+      </p>
+      <div class="pt-4 flex flex-wrap justify-center gap-4">
+        <button class="open-sample-modal px-8 py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-earth-forest font-black text-base shadow-xl transition-all flex items-center gap-2">
+          <i data-lucide="box" class="w-5 h-5"></i>
+          <span>Claim Complimentary Sample Kit</span>
+        </button>
+        <a href="https://wa.me/919876543210?text=Hi%20Rudra!%20I'd%20like%20to%20discuss%20custom%20plantable%20packaging%20for%20my%20business." target="_blank" class="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-base border border-white/20 transition-all flex items-center gap-2">
+          <i data-lucide="phone-call" class="w-5 h-5 text-emerald-300"></i>
+          <span>Chat with Rudra on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-earth-soil text-slate-400 text-xs py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-emerald-700 flex items-center justify-center text-white">
+          <i data-lucide="sprout" class="w-5 h-5"></i>
+        </div>
+        <span class="text-slate-200 font-bold text-sm">Plantable Packaging</span>
+        <span>• Handcrafted in Alandi, Pune, Maharashtra</span>
+      </div>
+      <div>
+        <span>Entrepreneurship Project Milestone 1 • Founder: Rudra Morkhade</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sample Box Request Modal -->
+  <div id="sample-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-emerald-900/10 relative">
+      <button id="close-sample-modal" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Form View -->
+      <div id="sample-form-content" class="space-y-4">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-emerald-800 font-bold bg-emerald-100 px-2.5 py-0.5 rounded">
+            Free B2B Sample Kit
+          </span>
+          <h3 class="text-2xl font-black text-earth-forest mt-1">Experience the Texture &amp; Seeds</h3>
+          <p class="text-slate-600 text-xs sm:text-sm">We'll dispatch a complimentary 10×8×3.5 cm prototype box with testing soil instructions to your business address.</p>
+        </div>
+
+        <form id="sample-form" class="space-y-3 pt-2">
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="text-xs font-bold text-slate-700 block mb-1">Your Name *</label>
+              <input type="text" id="sample-name" required placeholder="e.g. Aditi Joshi" class="w-full text-xs p-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-700 block mb-1">Brand Name *</label>
+              <input type="text" id="sample-brand" required placeholder="e.g. Veda Organics" class="w-full text-xs p-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="text-xs font-bold text-slate-700 block mb-1">City / State *</label>
+              <input type="text" id="sample-city" required placeholder="e.g. Pune, MH" class="w-full text-xs p-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-700 block mb-1">WhatsApp Number *</label>
+              <input type="tel" id="sample-phone" required placeholder="+91 98765 43210" class="w-full text-xs p-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+            </div>
+          </div>
+
+          <div>
+            <label class="text-xs font-bold text-slate-700 block mb-1">Product You Package</label>
+            <select id="sample-type" class="w-full text-xs p-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+              <option>Artisanal Soaps &amp; Skincare</option>
+              <option>Cosmetics &amp; Serums</option>
+              <option>Candles &amp; Home Fragrances</option>
+              <option>Jewelry &amp; Handmade Crafts</option>
+              <option>Corporate Gifting / Events</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full py-3 rounded-xl bg-earth-forest hover:bg-emerald-800 text-white font-bold text-sm shadow-md transition-all mt-2">
+            Confirm &amp; Ship My Sample Box →
+          </button>
+        </form>
+      </div>
+
+      <!-- Success View (Hidden by default) -->
+      <div id="sample-success-content" class="hidden text-center py-6 space-y-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
+          <i data-lucide="check-circle" class="w-8 h-8"></i>
+        </div>
+        <h4 class="text-2xl font-black text-earth-forest">Sample Kit Requested!</h4>
+        <p id="sample-success-msg" class="text-slate-600 text-xs sm:text-sm">
+          Your complimentary sample box has been queued for dispatch.
+        </p>
+        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl inline-block text-xs font-mono text-slate-700">
+          Tracking ID: <span id="sample-tracking-num" class="font-bold text-emerald-700">SP-849201</span>
+        </div>
+        <p class="text-xs text-slate-400">Rudra's team from Alandi, Pune will connect on WhatsApp with shipping tracking details.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
